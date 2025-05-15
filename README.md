@@ -100,10 +100,4 @@ Bạn có thể test bằng:
 - [Postman](https://www.postman.com/)
 - Swagger UI (`/swagger/index.html`)
 
-## 📬 Góp ý & Liên hệ
 
-Nếu bạn có thắc mắc, hãy tạo [Issue](https://github.com/your-username/go-crud-api/issues) hoặc gửi email: `your.email@example.com`.
-
----
-
-**Happy Coding! 🚀**
