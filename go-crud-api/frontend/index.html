@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CRUD User</title>
+</head>
+
+<body>
+    <h1>Danh sách người dùng</h1>
+    <ul id="userList"></ul>
+
+    <script>
+        fetch('/api/users')
+            .then(res => res.json())
+            .then(data => {
+                const list = document.getElementById('userList');
+                data.forEach(u => {
+                    const li = document.createElement('li');
+                    li.textContent = `${u.id}: ${u.name} (${u.email})`;
+                    list.appendChild(li);
+                });
+            });
+    </script>
+</body>
+
+</html>
